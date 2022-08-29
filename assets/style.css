@@ -64,6 +64,11 @@ nav ul a {
    background-size: cover;
 }
 
+img {
+    height: 400px;
+    width: 600px;
+}
+
 .first-project:hover {
     opacity: .5;
 }
@@ -125,12 +130,16 @@ main section {
 }
 
 .contact-method {
-    display: inline;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 20%;
     padding: 5px;
     font-size: 120%;
     border-bottom: 3px solid red;
 }
 
-.contact-method:hover {
-   
+.contact-method:hover a {
+    color: black;
+    text-decoration: wavy green;
 }
