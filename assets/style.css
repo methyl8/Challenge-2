@@ -1,3 +1,136 @@
 * {
     box-sizing: border-box;
 }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: black;
+    color: red;
+}
+
+h1 {
+    font-size: 250%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    min-width: 200px;
+}
+
+nav ul a {
+    color: red;
+    text-decoration: none;
+}
+
+.spacer {
+    text-align: right;
+    color: white;
+    background-image: url(./images/spacer-background.jpg);
+    background-size: cover;
+    height: 150px;
+}
+
+.spacer span {
+    position: relative;
+    font-size: 150%;
+    right: 20px;
+    top: 90px;
+    background-color: red;
+    color: black;
+}
+
+.work-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 300px 100px 100px;
+    grid-gap: 10px;
+    background-color: black;
+    padding: 10px;
+
+}
+
+.work-grid div {
+    border: 2px solid white;
+    color: white;
+}
+
+.first-project {
+   grid-column: 1 / 3;
+   background-image: url(./images/first-project.jpg);
+   background-size: cover;
+}
+
+.first-project:hover {
+    opacity: .5;
+}
+.second-project:hover {
+    opacity: .5;
+}
+.third-project:hover {
+    opacity: .5;
+}
+.fourth-project:hover {
+    opacity: .5;
+}
+.fifth-project:hover {
+    opacity: .5;
+}
+.second-project {
+    background-image: url(./images/second-project.jpg);
+    background-size: cover;
+}
+.third-project {
+    background-image: url(./images/third-project.jpg);
+    background-size: cover;
+}
+
+.fourth-project {
+    background-image: url(./images/fourth-project.jpg);
+    background-size: cover;
+}
+
+.fifth-project {
+    background-image: url(./images/fifth-project.jpg);
+    background-size: cover;
+}
+
+.sidebar {
+    margin: 10px;
+    padding: 10px;
+    font-size: 300%;
+    color: red;
+    text-align: right;
+    height: 100%;
+    width: 20%;
+    border-right: 3px solid red;
+}
+
+.main-content {
+    width: 80%;
+    padding: 10px;
+}
+
+main section {
+    display: flex;
+}
+
+
+#contact-me a {
+    color: red;
+    text-decoration: none;
+}
+
+.contact-method {
+    display: inline;
+    padding: 5px;
+    font-size: 120%;
+    border-bottom: 3px solid red;
+}
+
+.contact-method:hover {
+   
+}
