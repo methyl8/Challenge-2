@@ -2,12 +2,18 @@
     box-sizing: border-box;
 }
 
+:root {
+    --red: red;
+    --black: black;
+    --white: white;
+}
+
 header {
     display: flex;
     justify-content: space-between;
     padding: 10px;
-    background-color: black;
-    color: red;
+    background-color: var(--black);
+    color: var(--red);
 }
 
 h1 {
@@ -22,68 +28,67 @@ nav ul {
 }
 
 nav ul a {
-    color: red;
+    color: var(--red);
     text-decoration: none;
 }
 
-.spacer {
+.banner {
     text-align: right;
-    color: white;
+    color: var(--white);
     background-image: url(./images/spacer-background.jpg);
     background-size: cover;
     height: 150px;
 }
 
-.spacer span {
+.banner span {
     position: relative;
     font-size: 150%;
     right: 20px;
     top: 90px;
-    background-color: red;
-    color: black;
+    background-color: var(--red);
+    color: var(--black);
 }
 
-.work-grid {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: 300px 100px 100px;
-    grid-gap: 10px;
-    background-color: black;
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
     padding: 10px;
+}
+
+.about-img {
+    /* float doesn't work with flex? */
+    float: left;
+    height: 150px;
+    width: 150px;
+}
+
+main section {
+    display: flex;
+}
+
+.project {
+    display: flex;
+    margin: 5px;
+    height: 200px;
+    width: 400px;
+    border: 2px solid var(--white);
+    color: var(--white);
 
 }
 
-.work-grid div {
-    border: 2px solid white;
-    color: white;
+.project:hover {
+    opacity: .5;
 }
 
 .first-project {
-   grid-column: 1 / 3;
-   background-image: url(./images/first-project.jpg);
-   background-size: cover;
-}
-
-img {
+    flex: 2 2 0;
+    background-image: url(./images/first-project.jpg);
+    background-size: cover;
+    width: 810px;
     height: 400px;
-    width: 600px;
 }
 
-.first-project:hover {
-    opacity: .5;
-}
-.second-project:hover {
-    opacity: .5;
-}
-.third-project:hover {
-    opacity: .5;
-}
-.fourth-project:hover {
-    opacity: .5;
-}
-.fifth-project:hover {
-    opacity: .5;
-}
 .second-project {
     background-image: url(./images/second-project.jpg);
     background-size: cover;
@@ -103,43 +108,59 @@ img {
     background-size: cover;
 }
 
-.sidebar {
+aside {
     margin: 10px;
     padding: 10px;
     font-size: 300%;
-    color: red;
+    color: var(--red);
     text-align: right;
     height: 100%;
     width: 20%;
-    border-right: 3px solid red;
+    border-right: 3px solid var(--red);
 }
 
-.main-content {
-    width: 80%;
-    padding: 10px;
-}
-
-main section {
-    display: flex;
-}
-
-
-#contact-me a {
-    color: red;
-    text-decoration: none;
+.main-content-contact {
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    border-bottom: 3px solid var(--red);
 }
 
 .contact-method {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    width: 20%;
     padding: 5px;
     font-size: 120%;
-    border-bottom: 3px solid red;
 }
 
 .contact-method:hover a {
-    color: black;
-    text-decoration: wavy green;
+    color: var(--black);
+    font-size: 140%;
+}
+
+.contact-method a {
+    color: var(--red);
+    text-decoration: none;
+}
+
+@media screen and (max-width:900px) {
+    .main-content{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:500px) {
+    section {
+        flex-direction: column;
+    }
+
+    aside {
+        border-right: 0px;
+        border-bottom: 3px solid var(--red);
+
+    }
+
+    .project {
+    flex-direction: column;
+    height:100px;
+    width: 400px;
+    }
+    
 }
