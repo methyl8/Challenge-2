@@ -15,9 +15,9 @@ Challenge 2 - portfolio page
 [Challenge 2 Live page](https://methyl8.github.io/Challenge-2/)
 
 ## Screenshots
-![Full Size](/screenshot/full.png?raw=true)
-![900 pixels](/screenshot/900px.png?raw=true)
-![500 pixels](/screenshot/500px.png?raw=true)
+![Full Size](/screenshots/full.png?raw=true)
+![900 pixels](/screenshots/900px.png?raw=true)
+![500 pixels](/screenshots/500px.png?raw=true)
 
 ## Credits
 Shovel description from [Wikipedia](https://en.wikipedia.org/wiki/Shovel)
